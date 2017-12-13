@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="RestulWebServicesProj-Provider-UsingJersey1.xImpl-EmpUseCase">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="RestulWebServicesProj-Provider-UsingJersey1.xImpl-EmpUseCase"/>
+        <property name="java-output-path" value="/RestulWebServicesProj-Provider-UsingJersey1.xImpl-EmpUseCase/build/classes"/>
+    </wb-module>
+</project-modules>

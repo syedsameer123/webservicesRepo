@@ -1,0 +1,60 @@
+ drop table emp143;
+ ===================
+SQL> create table emp143(empno number(10), ename varchar2(40),job varchar2(15),sal number(10,5),gender varchar2(4),addrs varchar2(40),mobileno varchar2(15));
+===============================================================================================================================================================
+SQL> desc emp143;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- -------------
+
+ EMPNO                                              NUMBER(10)
+ ENAME                                              VARCHAR2(40)
+ JOB                                                VARCHAR2(15)
+ SAL                                                NUMBER(10,5)
+ GENDER                                             VARCHAR2(4)
+ ADDRS                                              VARCHAR2(40)
+ MOBILENO                                           VARCHAR2(15)
+ ===============================================================================================================================================================
+SQL> insert into emp143 values(101,'pavan','manager',40000,'m','hyd','9172073072
+29');
+
+1 row created.
+
+SQL> insert into emp143 values(102,'syf','president',90000.80,'m','kadapa','9172
+07307228');
+
+1 row created.
+
+SQL> insert into emp143 values(103,'sameer','manager',70000.80,'m','vizag','9172
+07307227');
+
+1 row created.
+
+SQL> insert into emp143 values(104,'arif','clerk',30000.80,'m','anantpur','91720
+7307226');
+
+1 row created.
+
+SQL> insert into emp143 values(105,'arifwife','clerk',20000.80,'f','anantpur','9
+17207307226');
+
+1 row created.
+
+SQL> commit;
+
+Commit complete.
+===================================================================================================================================================================
+SQL> select * from emp143;
+
+     EMPNO ENAME                                    JOB                    SAL SEX ADDRS                            MOBILENO
+---------- ---------------------------------------- --------------- ---------- ---- ---------------------------------------- ---------------
+       101 pavan                                    manager              40000 m    hyd                              917207307229
+       102 syf                                      president          90000.8 m    kadapa                           917207307228
+       103 sameer                                   manager            70000.8 m    vizag                            917207307227
+       104 arif                                     clerk              30000.8 m    anantpur                         917207307226
+       105 arifwife                                 clerk              20000.8 f    anantpur                         917207307226
+
+SQL> select * from emp143 where empno=101;
+
+     EMPNO ENAME                                    JOB                    SAL GEND ADDRS                            MOBILENO
+---------- ---------------------------------------- --------------- ---------- ---- ---------------------------------------- ---------------
+       101 pavan                                    manager              40000 m    hyd                              917207307229
